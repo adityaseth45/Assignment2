@@ -1,0 +1,25 @@
+<html>
+        <% include partials/head.ejs %>
+
+    <body>
+            <% include partials/menu.ejs %>
+            <br>
+            <br>
+          <div class="row">
+              <div class="col-md-12 text-center">
+                 <h1 class="titleview"> <%= cityLabel %> has something to say!</h1></div>
+          </div>
+<div class="container">
+          <div class="row">
+              
+                  <% for(var i=1;i<=imageCount;i++){ %>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                          <img src="/images/<%=city%>/<%=i%>.jpg">
+                </div></div>
+                    <%}%>
+              
+          </div>
+        </div>
+    </body>
+</html>
